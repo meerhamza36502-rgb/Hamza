@@ -500,7 +500,7 @@
           return;
         }
         
-        if (query.length < ) {
+        if (query.length < 10) {
            showNotification('Invalid format. Enter 11 digit Phone or 13 digit CNIC', 'error');
            return; 
         }
@@ -545,7 +545,7 @@
         seconds--;
         timer.textContent = seconds;
         
-        if (seconds <= 0) {
+        if (seconds <= 10) {
           clearInterval(countdown);
           modal.style.display = 'none';
           callback();
